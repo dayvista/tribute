@@ -1,0 +1,28 @@
+body {
+  font-family: 'IM Fell Great Primer SC', 'Libre Baskerville', serif;
+}
+
+body { /* help with responsive formatting of bg img obtained from https://www.webfx.com/blog/web-design/responsive-background-image/ */
+  background-image: url(../img/forest.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color:
+}
+
+@media only screen and (max-width:767px) {
+  body {
+    background-image: url(../img/forest-mobile.jpg);
+  }
+}
+
+#title {
+  font-family: 'IM Fell Great Primer SC', serif;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
