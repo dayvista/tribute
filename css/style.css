@@ -1,14 +1,12 @@
-body {
-  font-family: 'IM Fell Great Primer SC', 'Libre Baskerville', serif;
-}
-
 body { /* help with responsive formatting of bg img obtained from https://www.webfx.com/blog/web-design/responsive-background-image/ */
+  font-family: 'Special Elite', cursive;
   background-image: url(../img/forest.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  background-color:
+  display: block;
+  margin: 15px 15px 15px 15px;
 }
 
 @media only screen and (max-width:767px) {
@@ -17,12 +15,40 @@ body { /* help with responsive formatting of bg img obtained from https://www.we
   }
 }
 
+@media only screen and (min-width:768px) {
+  #image {
+    float: right;
+    width: 30%;
+  }
+}
+
 #title {
-  font-family: 'IM Fell Great Primer SC', serif;
+  font-family: 'Merriweather', sans-serif;
 }
 
 #image {
   max-width: 100%;
-  display: block;
+  display: inline-flex;
   height: auto;
+  border-radius: 15px;
+}
+
+#card-1 {
+  background-color: #a87949;
+  box-shadow: inset 0 0 10px #382418;
+  position: absolute;
+  padding: 25px;
+  box-sizing: border-box;
+  border-collapse: separate;
+  border-radius: 5px;
+}
+
+#card-2 {
+  background-color: #a87949;
+  box-shadow: inset 0 0 10px #382418;
+  position: absolute;
+  padding: 25px;
+  box-sizing: border-box;
+  border-collapse: separate;
+  border-radius: 5px;
 }
