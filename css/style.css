@@ -5,13 +5,13 @@ body { /* help with responsive formatting of bg img obtained from https://www.we
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  margin: 15px 15px 15px 15px;
-  color: #FFF9F3;
+  margin: 5% 5% 5% 5%;
+  color: #E5ECE4;
 }
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
   body {
-    font-size: 3vw;
+    font-size: 3.7vw;
   }
   #title {
     font-size: 5.5vw;
@@ -20,11 +20,17 @@ body { /* help with responsive formatting of bg img obtained from https://www.we
     max-width: 300px;
     width: 80%;
   }
+  footer {
+    font-size: 3.3vw;
+  }
+  #tribute-link {
+    font-size: 2.9vw;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   body {
-    font-size: 2vw;
+    font-size: 2.3vw;
   }
   #title {
     font-size: 4.5vw;
@@ -32,6 +38,12 @@ body { /* help with responsive formatting of bg img obtained from https://www.we
   #image {
     max-width: 400px;
     width: 80%;
+  }
+  footer {
+    font-size: 2vw;
+  }
+  #tribute-link {
+    font-size: 2vw;
   }
 }
 
@@ -42,26 +54,37 @@ body { /* help with responsive formatting of bg img obtained from https://www.we
   #title {
     font-size: 3.1vw;
   }
+  footer {
+    font-size: 20px;
+  }
+  #tribute-link {
+    font-size: 18px;
+  }
+}
+
+#button-wrapper
+{
+  text-align: center;
 }
 
 #tribute-link { /* learned how to make interesting buttons by studying code generated @ bestcssbuttongenerator.com */
 	box-shadow: inset 0 0 15px #533b25;
 	background: radial-gradient(#9b7753 5%, #533b25 100%);
-	background-color:#a87949;
+	background-color:#566540;
 	border-radius: 8px;
-	display: flex;
-  justify-content: center;
+  top: 50%;
 	cursor: pointer;
   color: inherit;
   text-decoration: none;
-	font-size: 18px;
 	padding: 6px 24px;
-  text-align: center;
+  width: 15%;
 }
+
 #tribute-link:hover {
-	background:linear-gradient(#533b25 5%, #9b7753 100%);
-	background-color:#a87949;
+	background:linear-gradient(#533b25 5%, #a87949 100%);
+  color: #F4FEE5;
 }
+
 #tribute-link:active {
 	position: relative;
 	top: 1px;
@@ -70,7 +93,6 @@ body { /* help with responsive formatting of bg img obtained from https://www.we
 #title {
   font-family: 'Nothing You Could Do', cursive;
   text-align: center;
-  text-decoration: underline;
 }
 
 #img-div {
@@ -104,15 +126,15 @@ figcaption {
 }
 
 #card-1 {
-  background-image: radial-gradient(#9b7753, #a87949);
+  background-image: linear-gradient(#566540, #446540);
 }
 
 #card-2 {
-  background-image: linear-gradient(#9b7753, #a87949);
+  background-image: linear-gradient(#566540, #446540);
 }
 
 #card-3 {
-  background-image: linear-gradient(#9b7753, #a87949);
+  background-image: linear-gradient(#566540, #446540);
   margin: auto;
   text-align: center;
 }
@@ -120,7 +142,6 @@ figcaption {
 footer {
   margin: auto;
   text-align: center;
-  font-size: 14px;
 }
 
 #logo {
